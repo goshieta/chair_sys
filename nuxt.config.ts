@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   css: ['/assets/css/style.css'],
   app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    },
     head: {
       title: '席替え革命',
       meta: [

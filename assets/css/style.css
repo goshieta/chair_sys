@@ -6,14 +6,19 @@
 body {
   margin: 0;
   padding: 0;
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
 }
-::-webkit-scrollbar-thumb {
-  width: 8px;
-  border-radius: 4px;
-  background-color: rgb(207, 207, 207);
+
+/*ページ遷移のアニメーション*/
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.1s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
 }
