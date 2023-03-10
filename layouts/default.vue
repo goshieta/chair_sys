@@ -12,12 +12,21 @@
       >
     </div>
   </div>
-  <slot />
+  <div id="body">
+    <slot />
+  </div>
 </template>
 
 <style>
+#body {
+  margin-top: 100px;
+}
 #header {
+  top: 0px;
   background-color: #d1ffdd;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 #titleImg {
   width: 30px;
