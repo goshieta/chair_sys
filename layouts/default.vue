@@ -55,4 +55,9 @@
   color: black;
   text-decoration: none;
 }
+@media screen and (max-width: 650px) {
+  #linkArea {
+    display: none;
+  }
+}
 </style>
