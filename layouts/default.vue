@@ -1,12 +1,13 @@
 <template>
   <div id="header">
-    <h1 id="appTitle">席替え革命</h1>
+    <h1 id="appTitle"><NuxtLink to="/">席替え革命</NuxtLink></h1>
     <div id="linkArea">
-      <a href="">作成</a>
-      <a href="">アップロード</a>
-      <a href="">このサイトについて</a>
-      <a href="https://iyqzbugtwfgzyugaybuxxa.on.drv.tw/Indorde%20top/InT.html"
-        >Inforde</a
+      <NuxtLink to="">作成</NuxtLink>
+      <NuxtLink to="">アップロード</NuxtLink>
+      <NuxtLink to="/about">このサイトについて</NuxtLink>
+      <NuxtLink
+        to="https://iyqzbugtwfgzyugaybuxxa.on.drv.tw/Indorde%20top/InT.html"
+        >Inforde</NuxtLink
       >
     </div>
   </div>
@@ -14,13 +15,12 @@
 </template>
 
 <style>
-* {
-  font-family: '游ゴシック体', 'YuGothic', '游ゴシック', 'Yu Gothic',
-    'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo',
-    sans-serif;
-}
 #appTitle {
   font-size: 25px;
+}
+#appTitle a {
+  color: black;
+  text-decoration: none;
 }
 #header {
   display: flex;
