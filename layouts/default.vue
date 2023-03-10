@@ -1,5 +1,6 @@
 <template>
   <div id="header">
+    <img src="/favicon.png" alt="" id="titleImg" width="30" height="30" />
     <h1 id="appTitle"><NuxtLink to="/">席替え革命</NuxtLink></h1>
     <div id="linkArea">
       <NuxtLink to="">作成</NuxtLink>
@@ -15,6 +16,15 @@
 </template>
 
 <style>
+#header {
+  background-color: #d1ffdd;
+}
+#titleImg {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  margin-right: 10px;
+}
 #appTitle {
   font-size: 25px;
 }
